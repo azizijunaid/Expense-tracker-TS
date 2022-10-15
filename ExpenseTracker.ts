@@ -55,7 +55,7 @@ export class ExpenseTracker {
   }
 
   Balance(): number {
-    return this.TotalIncome() - this.TotalIncome();
+    return this.TotalIncome() - this.TotalExpense();
   }
 }
 
@@ -85,5 +85,5 @@ expenseTracker.AddIncome({
   type: 'Income',
 });
 console.log(`TotalExpense : ${expenseTracker.TotalExpense()}`);
-console.log(`TotalIncome : ${expenseTracker.TotalExpense()}`);
-console.log(`Balance : ${expenseTracker.TotalExpense()}`);
+console.log(`TotalIncome : ${expenseTracker.TotalIncome()}`);
+console.log(`Balance : ${expenseTracker.Balance()}`);
